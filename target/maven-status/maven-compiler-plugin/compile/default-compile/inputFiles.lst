@@ -1,0 +1,14 @@
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/controller/interceptor/GeneroController.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/repository/LivroRepository.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/repository/impl/GeneroRepositoryImpl.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/repository/EditoraRepository.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/repository/impl/LivroRepositoryImpl.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/repository/Repository.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/model/Livro.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/repository/impl/EditoraRepositoryImpl.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/controller/interceptor/CORSInterceptor.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/model/Editora.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/repository/impl/AbstractRepositoryImpl.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/model/Genero.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/model/AbstractModel.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/repository/GeneroRepository.java

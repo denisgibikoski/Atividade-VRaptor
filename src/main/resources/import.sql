@@ -1,0 +1,38 @@
+
+INSERT INTO genero (nome) VALUES ('Acao');
+INSERT INTO genero (nome) VALUES ('Animacao');
+INSERT INTO genero (nome) VALUES ('Aventura');
+INSERT INTO genero (nome) VALUES ('Cinema de arte');
+INSERT INTO genero (nome) VALUES ('Chanchada');
+INSERT INTO genero (nome) VALUES ('Cinema catastrofe');
+INSERT INTO genero (nome) VALUES ('Comedia');
+INSERT INTO genero (nome) VALUES ('Comedia romantica');
+INSERT INTO genero (nome) VALUES ('Comedia dramatica');
+INSERT INTO genero (nome) VALUES ('Comedia de acao');
+INSERT INTO genero (nome) VALUES ('Cult');
+INSERT INTO genero (nome) VALUES ('Danca');
+INSERT INTO genero (nome) VALUES ('Documentario');
+INSERT INTO genero (nome) VALUES ('Docuficcao');
+INSERT INTO genero (nome) VALUES ('Drama');
+INSERT INTO genero (nome) VALUES ('Espionagem');
+INSERT INTO genero (nome) VALUES ('Ficcao cientifica');
+INSERT INTO genero (nome) VALUES ('Musical');
+INSERT INTO genero (nome) VALUES ('Policial');
+INSERT INTO genero (nome) VALUES ('Romance');
+INSERT INTO genero (nome) VALUES ('Suspense');
+INSERT INTO genero (nome) VALUES ('Terror');
+
+INSERT INTO editora(nome) VALUES ('AMC');
+INSERT INTO editora(nome) VALUES ('HBO');
+INSERT INTO editora(nome) VALUES ('CBS');
+INSERT INTO editora(nome) VALUES ('BBC');
+INSERT INTO editora(nome) VALUES ('Sony');
+INSERT INTO editora(nome) VALUES ('Fox');
+INSERT INTO editora(nome) VALUES ('Disney');
+INSERT INTO editora(nome) VALUES ('NBC Universal');
+INSERT INTO editora(nome) VALUES ('Warner Bros');
+INSERT INTO editora(nome) VALUES ('ABC');
+INSERT INTO editora(nome) VALUES ('Netflix');
+INSERT INTO editora(nome) VALUES ('Amazon');
+INSERT INTO editora(nome) VALUES ('FX Productions');
+INSERT INTO editora(nome) VALUES ('Paramount');
