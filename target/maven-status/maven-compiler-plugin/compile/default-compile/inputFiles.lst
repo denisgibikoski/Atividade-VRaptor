@@ -12,3 +12,4 @@
 /home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/model/Genero.java
 /home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/model/AbstractModel.java
 /home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/repository/GeneroRepository.java
+/home/denis/Modelos/GitPos/atividade_vraptor/AtividadeVRaptor/src/main/java/com/d3nys/atividadevraptor/controller/interceptor/EditoraController.java
