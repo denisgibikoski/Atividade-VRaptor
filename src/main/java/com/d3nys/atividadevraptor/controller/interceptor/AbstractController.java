@@ -9,6 +9,7 @@ import br.com.caelum.vraptor.Consumes;
 import br.com.caelum.vraptor.Delete;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
+import static br.com.caelum.vraptor.Path.HIGHEST;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.serialization.gson.WithoutRoot;
@@ -89,7 +90,7 @@ public abstract class AbstractController<T extends AbstractModel, ID extends Ser
     }
 
     @Delete
-    @Path(value = "/")
+    @Path(value = "/", priority=HIGHEST)
     @Consumes(value = "application/json", options = WithoutRoot.class)
     public void remove(T entity) {
         getRepository().remove(entity.getId());
@@ -98,7 +99,7 @@ public abstract class AbstractController<T extends AbstractModel, ID extends Ser
     }
 
     @Post
-    @Path(value = {"", "/"})
+    @Path(value =  "/" ,priority=HIGHEST)
     @Consumes(value = "application/json", options = WithoutRoot.class)
     public void save(@Valid T entity) {
 
