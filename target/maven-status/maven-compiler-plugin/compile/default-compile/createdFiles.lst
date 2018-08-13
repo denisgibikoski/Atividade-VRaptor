@@ -1,7 +1,9 @@
 com/d3nys/atividadevraptor/controller/interceptor/EditoraController.class
 com/d3nys/atividadevraptor/repository/Repository.class
+com/d3nys/atividadevraptor/controller/interceptor/LivroController.class
 com/d3nys/atividadevraptor/model/Editora_.class
 com/d3nys/atividadevraptor/model/Livro_.class
+com/d3nys/atividadevraptor/controller/interceptor/AbstractController.class
 com/d3nys/atividadevraptor/repository/impl/AbstractRepositoryImpl.class
 com/d3nys/atividadevraptor/controller/interceptor/CORSInterceptor.class
 com/d3nys/atividadevraptor/model/Genero.class

@@ -5,20 +5,13 @@
  */
 package com.d3nys.atividadevraptor.controller.interceptor;
 
-import br.com.caelum.vraptor.Consumes;
 import br.com.caelum.vraptor.Controller;
-import br.com.caelum.vraptor.Delete;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
-import br.com.caelum.vraptor.Post;
-import br.com.caelum.vraptor.Put;
-import br.com.caelum.vraptor.Result;
-import br.com.caelum.vraptor.serialization.gson.WithoutRoot;
 import static br.com.caelum.vraptor.view.Results.json;
-import static br.com.caelum.vraptor.view.Results.status;
 import com.d3nys.atividadevraptor.model.Genero;
 import com.d3nys.atividadevraptor.repository.GeneroRepository;
-import com.d3nys.atividadevraptor.repository.impl.GeneroRepositoryImpl;
+import com.d3nys.atividadevraptor.repository.Repository;
 import javax.inject.Inject;
 
 /**
@@ -27,78 +20,33 @@ import javax.inject.Inject;
  */
 @Controller
 @Path("/genero")
-public class GeneroController {
-
-    private Result result;
-
-    private GeneroRepository generoRepository;
-
-    /**
-     * @deprecated
-     */
-    public GeneroController() {
-    }
+public class GeneroController extends AbstractController<Genero, Long> {
 
     @Inject
-    public GeneroController(Result result, GeneroRepositoryImpl generoRepositoryImpl) {
-        this.result = result;
-        this.generoRepository = generoRepositoryImpl;
+    private GeneroRepository generoRepository;
 
+    @Override
+    protected Repository getRepository() {
+        return generoRepository;
     }
 
-    @Get
     @Path(value = {"", "/"})
-    public void list() {
-
+    public void findAll() {
         result.use(json())
                 .withoutRoot()
-                .from(generoRepository.findAll())
+                .from(getRepository().findAll())
                 .serialize();
-
     }
-    
+
+    @Override
     @Get
-    @Path(value =  "/{id}")
-    public void buscar(Long id) {
-
+    @Path(value = "/page/")
+    public void findAllPaged(int page, int size) {
         result.use(json())
                 .withoutRoot()
-                .from(generoRepository.findOne(id))
+                .from(getRepository().findAll(page, size))
                 .serialize();
 
-    }
-    @Post
-    @Path(value = {"/",""})
-    @Consumes(value = "application/json",options = WithoutRoot.class )
-    public void salvar(Genero genero){
-        generoRepository.save(genero);
-        result.use(status()).created();
-    }
-    
-    @Put
-    @Path(value = {"/",""})
-    @Consumes(value = "application/json",options = WithoutRoot.class )
-    public void atualizar(Genero genero){
-        generoRepository.save(genero);
-        result.use(status()).ok();
-        
-    }
-    
-    @Delete
-    @Path(value =  "/{id}")
-    public void remove(Long id){
-        generoRepository.remove(id);
-        result.use(status()).ok();
-        
-    }
-    
-    @Delete
-    @Path(value = "/")
-    @Consumes(value = "application/json",options = WithoutRoot.class )
-    public void remove(Genero genero){
-        generoRepository.remove(genero.getId());
-        result.use(status()).ok();
-        
     }
 
 }
